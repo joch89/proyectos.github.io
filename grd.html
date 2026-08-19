@@ -49,6 +49,31 @@
       </div>
     </article>
 
+    <article class="project blueprint">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div class="project-tags">
+        <span class="tag tag-accent">GRD</span>
+        <span class="tag tag-accent-2">Clustering</span>
+        <span class="tag tag-outline">Publicado</span>
+      </div>
+      <h2>peer-groups-hospitales-chile</h2>
+      <p>Tipología estructural de 72 hospitales públicos chilenos sobre datos GRD 2019–2024. El modelo agrupa por lo que el hospital <em>es</em> —volumen, complejidad, perfil quirúrgico, diversidad de casuística, ambulatorización y presencia de maternidad— y deja fuera del agrupamiento toda variable de desempeño, que es justamente lo que después se quiere medir. Al recalcular el índice funcional contra la norma del propio grupo, los hospitales de alta especialización dejan de aparecer como ineficientes por atender casuística más pesada.</p>
+      <figure style="margin:24px 0 0">
+        <img src="informes/peer-groups-3-mapa.png" alt="Mapa tipológico de los 72 hospitales: proyección PCA sobre las 7 variables estructurales, coloreada por grupo (2024)">
+        <figcaption class="text-muted" style="font-size:14px;margin-top:8px">Mapa tipológico (PCA sobre las 7 variables, 2024). Los grupos son un corte defendible de un continuo, no islas separadas.</figcaption>
+      </figure>
+      <div class="project-meta">
+        <div><span class="label">Método</span><span>KMeans con k por silueta, Ward como control de método, variante ancla con centroides fijos</span></div>
+        <div><span class="label">Resultados</span><span>4 grupos interpretables · silueta 0,30 · estabilidad inter-anual ARI 0,68–0,89</span></div>
+        <div><span class="label">Reproducibilidad</span><span>Un comando de Docker recalcula el modelo y verifica las 400 filas hospital-año contra los resultados publicados</span></div>
+        <div><span class="label">Enlaces</span><span>
+          <a href="https://github.com/joch89/peer-groups-hospitales-chile">Repositorio</a> ·
+          <a href="informes/peer-groups-3-modelo.html">Informe del modelo</a> ·
+          <a href="informes/peer-groups-3-tablero.html">Tablero de indicadores</a>
+        </span></div>
+      </div>
+    </article>
+
     <article class="project blueprint pending">
       <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
       <div class="project-tags"><span class="tag tag-neutral">En preparación</span></div>
